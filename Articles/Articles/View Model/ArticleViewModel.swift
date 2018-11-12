@@ -12,8 +12,6 @@ class ArticleViewModel {
     
     // variable to hold model instance.
     var articleList:[Article]? = []
-    // vairable to hold filtered items.
-    var filteredArticles:[Article] = []
     
     private var cellViewModels: [ArticleCellViewModel] = [ArticleCellViewModel]() {
         didSet {

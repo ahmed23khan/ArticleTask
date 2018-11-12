@@ -19,6 +19,9 @@
 		96F141022198679D001FC200 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F141002198679D001FC200 /* ArticleTableViewCell.swift */; };
 		96F141032198679D001FC200 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F141012198679D001FC200 /* ArticleTableViewCell.xib */; };
 		96F1410621989B56001FC200 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1410521989B56001FC200 /* ArticleViewModel.swift */; };
+		96F14109219908C3001FC200 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F14108219908C3001FC200 /* DetailViewController.swift */; };
+		96F1410D21990A23001FC200 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1410B21990A23001FC200 /* DetailTableViewCell.swift */; };
+		96F1410E21990A23001FC200 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F1410C21990A23001FC200 /* DetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		96F141002198679D001FC200 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		96F141012198679D001FC200 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		96F1410521989B56001FC200 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		96F14108219908C3001FC200 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96F1410B21990A23001FC200 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		96F1410C21990A23001FC200 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		96F140D521983E3C001FC200 /* Articles */ = {
 			isa = PBXGroup;
 			children = (
+				96F14107219908A5001FC200 /* Detail View */,
 				96F1410421989B27001FC200 /* View Model */,
 				96F140FF2198676A001FC200 /* Custom Views */,
 				96F140FC21984D52001FC200 /* Model */,
@@ -152,6 +159,24 @@
 				96F1410521989B56001FC200 /* ArticleViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		96F14107219908A5001FC200 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				96F1410A21990A03001FC200 /* Custom Cell */,
+				96F14108219908C3001FC200 /* DetailViewController.swift */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		96F1410A21990A03001FC200 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				96F1410B21990A23001FC200 /* DetailTableViewCell.swift */,
+				96F1410C21990A23001FC200 /* DetailTableViewCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96F141032198679D001FC200 /* ArticleTableViewCell.xib in Resources */,
+				96F1410E21990A23001FC200 /* DetailTableViewCell.xib in Resources */,
 				96F140E121983E3E001FC200 /* LaunchScreen.storyboard in Resources */,
 				96F140DE21983E3E001FC200 /* Assets.xcassets in Resources */,
 				96F140DC21983E3C001FC200 /* Main.storyboard in Resources */,
@@ -256,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F1410D21990A23001FC200 /* DetailTableViewCell.swift in Sources */,
 				96F140D921983E3C001FC200 /* ViewController.swift in Sources */,
 				96F140F821983F15001FC200 /* ArticleManager.swift in Sources */,
 				96F140D721983E3C001FC200 /* AppDelegate.swift in Sources */,
@@ -263,6 +290,7 @@
 				96F141022198679D001FC200 /* ArticleTableViewCell.swift in Sources */,
 				96F1410621989B56001FC200 /* ArticleViewModel.swift in Sources */,
 				96F140FE21984EC5001FC200 /* Article.swift in Sources */,
+				96F14109219908C3001FC200 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

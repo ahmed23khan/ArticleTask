@@ -62,6 +62,13 @@ class ViewController: UIViewController {
     func registerNibs(){
         self.articleTableView.register(ArticleTableViewCell.nib, forCellReuseIdentifier: ArticleTableViewCell.identifier)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == StoryBoardIdentifiers.DetailSegueIdentifer {
+            let viewController = segue.destination as! DetailViewController
+            viewController.articleList = viewModel.articleList
+        }
+    }
 }
 
 // MARK: - TableView Datasource.
@@ -85,6 +92,10 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120.0
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: StoryBoardIdentifiers.DetailSegueIdentifer, sender: indexPath)
     }
 }
 

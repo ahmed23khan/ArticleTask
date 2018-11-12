@@ -18,4 +18,8 @@ struct UrlConstants {
 }
 struct PlaceHolder {
     static let PullRefresh = "Pull to refresh"
+    static let SearchBar   = "Search New York's Most Popular Articles."
+}
+struct StoryBoardIdentifiers {
+    static let DetailSegueIdentifer = "showDetail"
 }
